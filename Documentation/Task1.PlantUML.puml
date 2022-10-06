@@ -1,0 +1,25 @@
+@startuml
+Main "has a" *--- Car
+Main "has a" *--- Driver
+Car "has a" *--- Driver
+Car : - String make
+Car : - String model
+Car : - int year
+Car : - String bodytype
+Car : - Driver
+Car : + getDriver();
+Car : + setDriver();
+Car : + toString();
+Driver : - String name
+Driver : - int age
+Driver : + getName();
+Driver : + getAge();
+Driver : + setName();
+Driver : + setAge();
+Driver : + toString();
+Main : + Driver d1
+Main : + Car c1
+Main : + Car c2
+
+
+@enduml
